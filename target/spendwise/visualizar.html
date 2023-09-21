@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SpendWise</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="shortcut icon" href="assets/img/icons8-dinheiro-na-mão-48.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black text_nav spend_text d-none d-md-block" href="apresentacao.html">SpendWise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-chevron-down fa-sm text-black text_nav" style="color: #ffffff;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black text_nav  " href="inserir.html">
+                                <i class="fas fa-plus fa-lg"></i> Inserir
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black  text_nav" href="visualizar.html">
+                                <i class="fas fa-eye fa-lg"></i> Visualizar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black  text_nav" href="#">
+                                <i class="fas fa-chart-bar fa-lg"></i> Relatório
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="table-container">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Salário</td>
+                        <td>2023-05-21</td>
+                        <td>$2000</td>
+                        <td>
+                            <div class="action-icons">
+                                <div class="edit-icon">
+                                    <a href="alterar_receita.html" class="action-link">
+                                        <i class="fas fa-pencil-alt fa-sm"></i>
+                                    </a>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fas fa-trash-alt fa-sm"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Freelancer</td>
+                        <td>2023-05-20</td>
+                        <td>$500</td>
+                        <td>
+                            <div class="action-icons">
+                                <div class="edit-icon">
+                                    <a href="alterar_receita.html" class="action-link">
+                                        <i class="fas fa-pencil-alt fa-sm"></i>
+                                    </a>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fas fa-trash-alt fa-sm"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <table class="table mx-5">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aluguel</td>
+                        <td>2023-05-21</td>
+                        <td>$800</td>
+                        <td>
+                            <div class="action-icons">
+                                <div class="edit-icon">
+                                    <a href="alterar_despesa.html" class="action-link">
+                                        <i class="fas fa-pencil-alt fa-sm"></i>
+                                    </a>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fas fa-trash-alt fa-sm"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Supermercado</td>
+                        <td>2023-05-20</td>
+                        <td>$150</td>
+                        <td>
+                            <div class="action-icons">
+                                <div class="edit-icon">
+                                    <a href="alterar_despesa.html" class="action-link">
+                                        <i class="fas fa-pencil-alt fa-sm"></i>
+                                    </a>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fas fa-trash-alt fa-sm"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

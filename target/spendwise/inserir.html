@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SpendWise</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/insert.css">
+    <link rel="shortcut icon" href="assets/img/icons8-dinheiro-na-mão-48.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black text_nav spend_text d-none d-md-block" href="apresentacao.html">SpendWise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-chevron-down fa-sm text-black text_nav" style="color: #ffffff;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black text_nav  " href="inserir.html">
+                                <i class="fas fa-plus fa-lg"></i> Inserir
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black  text_nav" href="visualizar.html">
+                                <i class="fas fa-eye fa-lg"></i> Visualizar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black  text_nav" href="#">
+                                <i class="fas fa-chart-bar fa-lg"></i> Relatório
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid min-vh-100 d-flex flex-column justify-content-center shadow contact-clean overflow-hidden"
+        style="background: linear-gradient(90deg, rgba(191,208,233,1) 0%, rgba(173,197,232,1) 9%, rgba(168,194,232,1) 38%, rgba(126,155,199,1) 100%);">
+        <div class="row d-flex align-items-center justify-content-center mt-5">
+            <form class="bg-light border rounded border-secondary shadow-lg col-6 my-5" method="post"
+                style="background: rgb(248,248,249);">
+
+                <h2 class="text-center spend_text text-black mb-5">Insira uma Receita!</h2>
+                
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="number" required id="id" name="id" placeholder="ID">
+                </div>
+
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="number" required id="valor" name="valor" placeholder="Valor">
+                </div>
+
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="text" required id="data" name="data" placeholder="Data">
+                </div>
+                
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="number" required id="idusuario" name="idusuario" placeholder="ID Usuario">
+                </div>
+
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="text" required id="descricao" name="descricao" placeholder="Descrição">
+                </div>
+                
+                <div class="form-group mb-3 spend_logo">
+                    <button class="btn btn-primary" type="submit" name="enviar" >Inserir</button>
+                </div>
+            </form>
+
+            <form class="bg-light border rounded border-secondary shadow-lg col-6 my-5" method="post"
+                style="background: rgb(248,248,249);">
+
+                <h2 class="text-center spend_text text-black mb-5">Insira uma Despesa!</h2>
+                
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="number" required id="id" name="id" placeholder="ID">
+                </div>
+
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="number" required id="valor" name="valor" placeholder="Valor">
+                </div>
+
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="text" required id="data" name="data" placeholder="Data">
+                </div>
+                
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="number" required id="idusuario" name="idusuario" placeholder="ID Usuario">
+                </div>
+
+                <div class="form-group mb-3 spend_logo">
+                    <input class="form-control" type="text" required id="categoria" name="categoria" placeholder="Categoria">
+                </div>
+                
+                <div class="form-group mb-3 spend_logo">
+                    <button class="btn btn-primary" type="submit" name="enviar" >Inserir</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/js/insert.js"></script>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
